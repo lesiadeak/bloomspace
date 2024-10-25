@@ -1,0 +1,921 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #857081;
+}
+.mainhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #857081;
+    color: #F6F4EF;
+    padding: 10px 120px;
+    height: 60px;
+}
+
+.logosite {
+    height: 80px;
+    width: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li {
+    margin-right: 91px;
+}
+
+.navigation ul li a {
+    color: #F6F4EF;
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0px, 120px;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #F6F4EF;
+    z-index: 1;
+}
+
+.content h1, .content h2 {
+    margin-bottom: 20px;
+    color: #F6F4EF;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #857081;
+}
+
+.content h3 {
+    margin-bottom: 40px;
+    color: #F6F4EF;
+    font-weight: bold;
+}
+
+#button1, #button2 {
+    border: 3px solid #857081;
+    border-radius: 20px;
+    width: 152px;
+    height: 42px;
+    margin: 42px 10px;
+    padding: 0;
+    color: #857081;
+    cursor: pointer;
+}
+
+#button1:hover, #button2:hover {
+    background-color: #857081;
+    color: #F6F4EF;
+    border: 2px solid #857081;
+}
+
+#button1:hover h3, #button2:hover h3 {
+    color: #F6F4EF;
+}
+
+#button1 h3, #button2 h3 {
+    margin: 0;
+    color: inherit;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 100px 120px; 
+}
+
+.textaboutus h1 {
+    margin: 0px 0px 16px 259px;
+}
+
+.textaboutus p {
+    margin: 0px 20px 100px 0px;
+    text-align: center;
+}
+
+.aboutus img {
+    border-radius: 24px;
+    width: 375px;
+    height: 356px; 
+    margin: 100px 120px 100px 84px;
+}
+
+.benefits {
+    position: relative;
+    background-image: url("img/class.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.benefits::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.50);
+    z-index: 0;
+}
+
+.benefits h1 {
+    text-align: center;
+    padding: 27px 0px 19px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits h4, .benefits p {
+    position: relative;
+    z-index: 1;
+}
+
+.pointone {
+    width: 366px;
+    height: 125px;
+    margin-left: 330px;
+    text-align: end;
+}
+
+.pointtwo {
+    width: 389px;
+    height: 129px;
+    margin-right: 307px;
+}
+
+.onetwo, .threewhyfour {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pointthree {
+    width: 388px;
+    height: 170px;
+    text-align: end;
+    color: #857081;
+    margin: 82px 62px 0px 160px;
+}
+
+.circle {
+    width: 280px !important;
+    height: 280px !important;
+    background-color: #857081;
+    border: 5px solid #857081;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.why h3 {
+    color: #F6F4EF;
+    margin: 0;
+}
+
+.pointfour {
+    width: 397px;
+    height: 170px;
+    color: #857081;
+    margin: 82px 120px 0px 62px;
+}
+
+.pointfive {
+    width: 414px;
+    height: 129px;
+    margin: 27px 0px 90px 170px;
+    text-align: end;
+}
+
+.pointsix {
+    width: 393px;
+    height: 104px;
+    margin: 25px 170px 90px 0px;
+}
+
+.fivesix {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services {
+    background-color: rgba(133, 112, 129, 0.2);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 1519px;
+    height: 700px;
+    padding: 30px 0px;
+}
+
+.service-box1, .service-box3 {
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 15px 199px 15px 0px;
+    border-radius: 0px 24px 24px 0px;
+    border: 1px solid #857081;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    height: 80px;
+}
+
+.text_1, .text_3{
+    margin-left: 15px;
+}
+
+.text_2{
+    text-align: end;
+    margin-right: 15px;
+}
+
+.service-box1 img, .service-box3 img {
+    width: 183px;
+    height: 127px;
+    margin-left: 160px;
+    border-radius: 24px;
+}
+
+.service-box2 {
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin: 15px 0px 15px 199px;
+    padding:40px 160px 40px 160px; 
+    border-radius: 24px 0px 0px 24px;
+    border: 1px solid #857081;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 80px;
+}
+
+.service-box2 img {
+    width: 183px;
+    height: 127px;
+    margin-right: 160px;
+    border-radius: 24px;
+}
+
+.services h1 {
+    text-align: center;
+    padding-bottom: 15;
+}
+
+.service-box1 h3 p, .service-box3 h3 p {
+    color:#857081; 
+    z-index: 2;
+    margin: 0;
+    text-align: start;
+}
+
+.service-box2 h3 p{
+    color: #857081;
+    z-index: 2;
+    margin: 0;
+    justify-content: right;
+}
+
+.pricesection{
+    padding: 30px 120px;
+}
+.pricesection h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.firstpack {
+    background-color: #857081;
+    z-index: 1;
+    width: 380px;
+    height: 250px;
+    border-radius: 24px;
+    border: 2px solid #857081;
+}
+
+.firstpack:hover, .secondpack:hover, .thirdpack:hover {
+    background-color: #F6F4EF;
+    border: 2px solid #857081;
+}
+
+.firstpack:hover h4, .firstpack:hover ul li, .secondpack:hover h4, .secondpack:hover ul li, .thirdpack:hover h4, .thirdpack:hover ul li {
+    color: #857081;
+}
+
+.price h4 {
+    color: #F6F4EF;
+    z-index: 2;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.secondpack {
+    background-color: #857081;
+    z-index: 1;
+    width: 380px;
+    height: 250px;
+    border-radius: 24px;
+}
+
+.firstpack ul li, .secondpack ul li, .thirdpack ul li {
+    margin: 0px 10px 10px 30px;
+    text-align: left;
+    color:#F6F4EF;
+}
+
+.thirdpack {
+    background-color: #857081;
+    z-index: 1;
+    width: 380px;
+    height: 250px;
+    border-radius: 24px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.specialprop {
+    margin: 37px 160px 80px 160px;
+}
+
+.specialprop h3 {
+    padding: 30px 0px; 
+}
+
+.specialprop ul li {
+    margin-bottom: 10px; 
+}
+
+.contactpage {
+    background-color: #857081;
+    padding: 20px; 
+}
+
+.contactpage h4, .contactpage p  {
+    color: #F6F4EF; 
+}
+
+.contactpage h1 {
+    color: #F6F4EF;
+    text-align: center;
+    padding: 20px 0px 40px 0px;
+}
+
+.conect {
+    border: 4px solid #F6F4EF;
+    border-radius: 24px;
+    margin: 0px 56px 40px 160px;
+    width: 424px;
+    height: auto;
+}
+
+.conect h3 {
+    color: #F6F4EF;
+    text-align: center;
+    margin: 28px 66px 19px 66px;
+}
+
+.form-group_name, .form-group_email, .form-group_phonenumberenter, .form-group_message {
+    background-color: #F6F4EF;
+    border: 2px solid #857081;
+    border-radius: 24px;
+    width: 340px;
+    margin: 8px 42px;
+}
+
+input, .editable {
+    width: 100%;
+    padding: 5px 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 12px;
+}
+
+.editable {
+    height: 150px;
+}
+
+.editable:empty:before {
+    content: attr(placeholder);
+    /* Виводить текст з атрибута placeholder */
+    color: #999;
+    /* Колір підказки */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    pointer-events: none;
+    /* Забороняє взаємодію з підказкою */
+}
+
+button {
+    background-color: #F6F4EF;
+    border: 2px solid #857081;
+    border-radius: 24px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 16px 28px 266px;
+}
+
+button:hover{
+    background-color: #857081;
+    color: #F6F4EF;
+    border: 2px solid #F6F4EF;
+}
+
+.conect h5 {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.contactpage img {
+    height: 375px;
+    width: 719px;
+}
+.location h4, .schedule h4 {
+    padding: 0px 160px 15px 0px;
+}
+
+.location p {
+    padding: 0px 56px 55px 0px;
+    width: 240px;
+    height: 59px;
+}
+
+.phonestudio h4{
+    padding: 0px 55px 15px 0px;
+}
+
+.phonestudio p {
+    padding: 0px 90px 74px 0px;
+    width: 161px;
+    height: 40px;
+}
+
+.schedule p {
+    padding: 0px 155px 74px 0px;
+    width: 147px;
+    height: 40px;
+}
+
+.right, .contactflex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.rightandimage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.privacy {
+    margin: 15px 0px 15px 180px;
+}
+
+.logofooter {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-right: 125px;
+}
+
+.logofooter img {
+    width: 20px;
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    gap: 3px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+}
+
+.logo_pr{
+    margin-right: 120px;
+}
+
+@media (max-width: 768px) {
+    .mainhead {
+        padding: 10px;
+        width: auto;
+        margin: 0;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        margin-left: 220px;
+        z-index: 1000;
+    }
+
+    .menu-toggle:checked+.burger-menu+.navigation ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #F6F4EF;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+        margin-top: 20px;
+    }
+
+    .navigation ul li {
+        margin: 10px 0;
+    }
+
+    .navigation ul li a {
+        color: #857081;
+    }
+
+    .mainhead {
+        color: #F6F4EF;
+    }
+
+    .navigation {
+        color: #F6F4EF;
+    }
+
+    video {
+        display: none;
+    }
+
+    #main {
+        height: 80vh;
+        background: url('img/main_video.png') no-repeat center center;
+        width: auto;
+        height: 88vh;
+        padding: 10px;
+    }
+
+    #bg-video {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, 0);
+    }
+
+    .content {
+        width: 90%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    #button1,
+    #button2 {
+        width: 120px;
+        height: 36px;
+        margin: 30px 5px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+    }
+
+    .aboutus {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+
+    .aboutus h1 {
+        font-size: 20px;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .aboutus p {
+        font-size: 14px;
+        margin: 0 10px 10px 10px;
+    }
+
+    .aboutus img {
+        max-width: 100%;
+        height: auto;
+        margin: 30px 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .aboutus {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .aboutus h1 {
+        font-size: 20px;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .aboutus p {
+        font-size: 14px;
+        margin: 0 10px 10px 10px;
+        align-items: center;
+    }
+
+    .aboutus img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 10px;
+    }
+
+    .benefits {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .benefits h1 {
+        font-size: 20px;
+    }
+
+    .benefits h4,
+    p {
+        font-size: 12px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .onetwo, .threewhyfour, .fivesix {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pointone, .pointtwo, .pointthree, .pointfour, .pointfive, .pointsix {
+        width: 80%;
+        text-align: center;
+        margin: 15px 0px;
+        height: 65px;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .services h1 {
+        font-size: 20px;
+    }
+    
+    .service-box1, .service-box2, .service-box3 {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        text-align: center;
+    }
+    
+    .services h3 {
+        font-size: 16px;
+        padding: 5px 0px;
+    }
+    
+    .services img {
+        margin: 0px;
+    }
+    
+    .service-box2 img {
+        order: 1;
+    }
+    
+    .service-box2 div {
+        order: 2;
+    }
+    
+    .text_2 {
+        text-align: center;
+    }
+
+    .price {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .firstpack, .secondpack, .thirdpack {
+        height: auto;
+        width: 345px;
+    }
+
+    .pricesection h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+        margin: 0%;
+    }
+
+    .pricesection h4 {
+        font-size: 16px;
+    }
+
+    .firstpack ul li, .secondpack ul li, .thirdpack ul li {
+        font-size: 12px;
+    }
+
+    .specialprop {
+        margin: 0px 0px 50px 10px;
+    }
+
+    .specialprop h3 {
+        padding: 0px 0px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .specialprop ul li {
+        margin: 5px 10px 20px 30px;
+        font-size: 12px;
+    }
+    .contactpage {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .contactpage h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .contactflex {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .conect {
+        width: 42vh;
+        margin: 0px 0px 30px 0px;
+        align-items: center;
+        height: 60vh;
+    }
+
+    button{
+        margin: 8px 26px 28px 150px;
+        width: 17vh;
+        height: 5vh;
+        padding: 0px;
+    }
+
+    .form-group_email h5, .form-group_name h5, .form-group_phonenumberenter h5, .form-group_message h5{
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .conect h3{
+        font-size: 16px;
+    }
+
+    .conect h5{
+        font-size: 12px;
+    }
+
+    .sent button{
+        font-size: 14px;
+    }
+
+    .editable{
+        height: 50px;
+    }
+
+    .form-group_name, .form-group_email, .form-group_phonenumberenter, .form-group_message{
+        width: auto;
+        margin: 10px;
+    }
+
+    .rightandimage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .right {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0px;
+        
+    }
+
+    .right h4, .right p {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 0px;
+        width: 200px;
+    }
+
+    .location, .phonestudio, .schedule {
+        margin-bottom: 25px;
+        align-items: center;
+    }
+
+    .contactpage img {
+        width: 350px;
+        height: 180px;
+    
+    }
+
+    .privacy{
+        margin: 0px;
+        font-size: 12px;
+        height: 10px;
+    }
+
+   .logo_pr{
+       display: none;
+    }
+}
+
